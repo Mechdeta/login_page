@@ -1,0 +1,116 @@
+/* Full Page Background */
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Container */
+.container {
+  width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.underline {
+  width: 50px;
+  height: 4px;
+  background: white;
+  margin: 8px auto 0;
+  border-radius: 10px;
+}
+
+/* Inputs */
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.input img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+}
+
+.input input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Forgot Password */
+.forgot-password {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.forgot-password span {
+  color: #ffd369;
+  cursor: pointer;
+}
+
+.forgot-password span:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.submitContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.submit {
+  flex: 1;
+  margin: 0 5px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 25px;
+  background: white;
+  color: #764ba2;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit:hover {
+  transform: scale(1.05);
+}
+
+.submit.active {
+  background: #ffd369;
+  color: black;
+}
